@@ -16,24 +16,38 @@
         font-family: "Raleway", sans-serif;
       }
       body {
-        background-image: url("photos/background_image.jpg");
-        color: white;
+        /* background-image: url("photos/background_image.jpg"); */
+        background-image: url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+        color: rgb(0, 0, 0);
       }
+     
       .container {
+        font-size: larger;
         display: flex;
-        align-items: center;
+ 
         justify-content: center;
-        height: 80vh;
+        
         flex-direction: column;
+        background-color: #d6eaf8;
+        opacity: 70%;
+        padding: 50px;
+        border-radius: 50px;
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        margin-top: 40px;
+       
       }
       #certificate-verify-file {
         padding: 10px;
         border: 2px solid black;
         border-radius: 5px;
+        font-size: medium;
       }
       #verify_btn {
         margin-top: 20px;
         padding: 5px 10px;
+        font-size: large;
       }
       input[type="file"]::file-selector-button {
         border: 1px solid #000000;
@@ -41,9 +55,11 @@
         border-radius: 4px;
         transition: 1s;
         font-family: "Raleway", sans-serif;
+        font-size: larger;
       }
-      .title {
+      .heading {
         text-align: center;
+        font-size: larger;
       }
     </style>
   </head>
@@ -54,7 +70,7 @@
           <a alt="logo"><img src="photos/logo.png" alt="Logo" id="logo" /></a>
         </div>
         <div class="nav">
-          <a href="HomePage.html" class="i2">Home</a>
+          <a href="index.html" class="i2">Home</a>
           <a href="addCertificate.html" class="i2">Add Certifcate</a>
           <a href="verifyCertificate.html" class="i2">Verify Certificate</a>
           <a href="About.html" class="i2">About</a>
@@ -65,6 +81,7 @@
       <div class="headTag"><a id="i3">CERTI-SECURE(Ensure Trust In Digital Certificates)</a></div>
       
     </ul>
+
     <div class="container" id="top">
       <div class="heading">
         <h3>Verify your certificate here</h3>
@@ -73,7 +90,6 @@
       <button id="verify_btn">Verify Certificate</button>
       <p id="result"></p>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/web3@1.4.0/dist/web3.min.js"></script>
     <script type="module" src="index.js"></script>
   </body>
